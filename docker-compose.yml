@@ -1,0 +1,20 @@
+version: '3.8'
+
+name: my-next-app-template #You can change this to your project name
+services:
+    my-next-app:
+        container_name: next-app #You can change this to your project name
+        env_file:
+            - .env
+        build:
+            context: .
+            target: development
+        image: next-app:latest
+        restart: unless-stopped
+        command: npm run dev
+        volumes:
+            - ./:/app
+            - /app/node_modules
+            - /app/.next
+        ports:
+            - 3000:3000
