@@ -1,8 +1,8 @@
 This is a template for a Next.js project with TypeScript, ESLint, Prettier, Husky, Jest and Cypress pre-installed and pre-configured. All the settings are based on the official [Next.js](https://nextjs.org/) and [Prettier](https://prettier.io/) basic configurations, with some minor adjustments.
 
-## Getting Started
+# Getting Started
 
-# Run the development server with command line
+## Run the development server with command line
 
 First, to run the development server:
 
@@ -26,23 +26,23 @@ docker-compose up -d --build
 
 This will launch a container with the development server running on port 3000. This container will be running in the background and it supports hot-reloading.
 
-## Configuration
+# Configuration
 
-# ESLint
+## ESLint
 
 The base configuration is based on the official [Next.js ESLint configuration]()
 
-# Prettier
+## Prettier
 
 The Prettier configuration is my personal configuration based on options that I found useful for a React project and the ones that I'm used to work with. You can change it in the `.prettierrc` file.
 
-# Husky
+## Husky
 
 The Husky configuration is set to run the `lint-staged` command before each commit. The `lint-staged` command will run Prettier on the files that are being commited.
 
-## Testing
+# Testing
 
-# Cypress
+## Cypress
 
 This project comes with Cypress pre-installed and pre-configured, for both E2E testing and Component testing.
 To run the Cypress tests, you can use the following command:
@@ -59,7 +59,7 @@ To run Cypress on the terminal, you can use the following command:
 npm run cypress:run
 ```
 
-# Jest
+## Jest
 
 This project comes with Jest pre-installed and pre-configured. You can run the Jest tests with the following command:
 
